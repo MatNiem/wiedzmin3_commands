@@ -3,3 +3,5 @@ god;Enable invincibility
 healme;Refill Geralt's HP bar
 Ciri;Switch player character to Ciri
 Geralt;Revert player character to Geralt
+addabl(buff_ID);Gives player a buff
+rmvabl(buff_ID);Removes a buff from a player

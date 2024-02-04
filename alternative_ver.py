@@ -3,6 +3,7 @@ from flet import View, Page, AppBar, ElevatedButton, Text, Row
 from flet import RouteChangeEvent, ViewPopEvent, CrossAxisAlignment, MainAxisAlignment
 import view_gen
 import item_view
+import skills
 
 
 def main(page: Page) -> None:
@@ -10,6 +11,24 @@ def main(page: Page) -> None:
     page.scroll = True
     page.window_min_width = page.width
     page.window_min_height = page.height
+
+    skills_view = View(
+        route='/skills',
+        controls=[
+            AppBar(title=Text('Home'), bgcolor='blue'),
+            ElevatedButton(text="Red", on_click=lambda _: page.go('/skills/sword'), color="red",
+                           width=page.window_width * 0.3, height=page.window_height * 0.15),
+            ElevatedButton(text="Blue", on_click=lambda _: page.go('/skills/magic'), color="blue",
+                           width=page.window_width * 0.3, height=page.window_height * 0.15),
+            ElevatedButton(text="Green", on_click=lambda _: page.go('/skills/alchemy'), color="green",
+                           width=page.window_width * 0.3, height=page.window_height * 0.15),
+            ElevatedButton(text="Yellow", on_click=lambda _: page.go('/skills/perk'), color="yellow",
+                           width=page.window_width * 0.3, height=page.window_height * 0.15),
+        ],
+        vertical_alignment=MainAxisAlignment.CENTER,
+        horizontal_alignment=CrossAxisAlignment.CENTER,
+        spacing=26
+    )
 
     def route_change(e: RouteChangeEvent) -> None:
         page.views.clear()
@@ -79,6 +98,16 @@ def main(page: Page) -> None:
                 page.views.append(view_gen.gen_view(page, 10, "Gwent commands"))
             case '/items':
                 page.views.append(item_view.gen_item_view(page))
+            case '/skills':
+                page.views.append(skills_view)
+            case '/skills/sword':
+                page.views.append(skills.gen_skills_view(page, "sword"))
+            case '/skills/magic':
+                page.views.append(skills.gen_skills_view(page, "magic"))
+            case '/skills/alchemy':
+                page.views.append(skills.gen_skills_view(page, "alchemy"))
+            case '/skills/perk':
+                page.views.append(skills.gen_skills_view(page, "perk"))
             case _:
                 pass
 
