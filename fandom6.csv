@@ -1,0 +1,31 @@
+Command;Description
+makeitrain;Toggle stormy weather anywhere
+stoprain;Stops rain from falling anywhere
+changeweather(Clear);The Spiral
+changeweather(Spiral_Aen_Elle);The Spiral
+changeweather(Spiral_Dark_Valley);The Spiral
+changeweather(Spiral_Desert);The Spiral
+changeweather(Spiral_Eternal_Cold);The Spiral
+changeweather(Winter Epilog);The Spiral
+changeweather(WT_Battle);Kaer Morhen
+changeweather(WT_Battle_Forest);Kaer Morhen
+changeweather(WT_Blizzard);Kaer MorhenSkellige
+changeweather(WT_Clear);Kaer MorhenWhite OrchardNovigradSkellige
+changeweather(WT_Heavy_Clouds);Isle of MistsKaer MorhenWhite OrchardNovigradSkelligeThe Spiral
+changeweather(WT_Heavy_Clouds_Dark);Kaer MorhenNovigradSkellige
+changeweather(WT_lessun_forest);Skellige
+changeweather(WT_Light_Clouds);Kaer MorhenWhite OrchardNovigrad
+changeweather(WT_Light_Rain);White Orchard
+changeweather(WT_Light_Snow);Default
+changeweather(WT_Mid_Clouds);Kaer MorhenWhite OrchardNovigradSkelligeThe SpiralVizima
+changeweather(WT_Mid_Clouds_Dark);NovigradSkellige
+changeweather(WT_Mid_Clouds_Fog);Skellige
+changeweather(WT_q501_Blizzard);Skellige
+changeweather(WT_q501_Blizzard2);Skellige
+changeweather(WT_q501_fight_ship_18_00);Skellige
+changeweather(WT_q501_Storm);Skellige
+changeweather(WT_q501_storm_arena);Skellige
+changeweather(WT_Rain_Storm);Kaer MorhenWhite OrchardNovigradSkellige
+changeweather(WT_Snow);Novigrad
+changeweather(WT_Vesemir_burial_hour_3_30);Kaer Morhen
+changeweather(WT_Wild_Hunt);Skellige

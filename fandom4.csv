@@ -1,0 +1,5 @@
+Command;Description
+witchcraft;Gives 1 of every item to Geralt. Warning: The game may crash, or take several minutes to process. Be patient.
+additem('name',#);Adds designated item(s) to inventory. e.g.: additem('Bear Armor 1',3) Specifying item quantities is optional
+addmoney(#);Adds specified amount of Crowns. e.g.: addmoney(100000)
+removemoney(#);Removes specified number of Crowns. e.g.: removemoney(5)

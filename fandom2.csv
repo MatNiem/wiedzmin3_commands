@@ -1,0 +1,19 @@
+Command;Description
+setlevel(#);Sets your player levelex:setlevel(15)
+levelup;Advance player level by 1
+addexp(#);Adds specified amount of experience points. e.g.: addexp(25000)
+learnskill(skill);Learns specified skill. e.g.: learnskill(sword_s3) Re-entering command will increase skill level.
+addskillpoints(#);Adds specified amount of skill points. e.g.: addskillpoints(5)
+Cat(1);Activates night vision
+Cat(0);Disables night vision
+setbeard(1);Grows a beard on Geralt
+shave;Removes Geralt's facial hair
+WitcherHairstyle(#);Sets Geralt's hairstyle (valid values: 1, 2, 3)
+addHair1;Changes Geralt's hairstyle to default
+addHair2;Changes Geralt's hairstyle to ponytail
+addHair3;Changes Geralt's hairstyle to long loose hair
+addHairDLC1;Changes Geralt's hairstyle to short with long bangs
+addHairDLC2;Changes Geralt's hairstyle to mohawk with a pony tail
+addHairDLC3;Changes Geralt's hairstyle to short with no bangs
+settattoo(1);Enables tattoo from Witcher 2 save
+settattoo(0);Removes tattoo from Witcher 2 save

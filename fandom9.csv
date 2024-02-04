@@ -1,0 +1,11 @@
+Command;Description
+AllowFT(1);Enable fast-travel from any location. (Note: You will need to repeat this every time you open a new game in order for it to work).
+gotoNovigrad;Immediately fast-travel to Novigrad
+gotoSkellige;Immediately fast-travel to the Skellige Isles
+gotoKaerMorhen;Immediately fast-travel to Kaer Morhen
+gotoProlog;Immediately fast-travel to White Orchard
+gotoPrologWinter;Immediately fast-travel to White Orchard
+ShowAllFT(1);Discover all Signposts
+ShowPins(1);Discover all map icons and areas
+xy(x,y);Teleport to coordinate (x,y). First teleport starts very high up in the atmosphere, second with the same coordinates teleports to the ground.
+tptopos(x,y,z);Teleport to coordinate (x,y,z).

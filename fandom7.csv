@@ -1,0 +1,3 @@
+Command;Description
+addfact(factid);Adds an internal fact which affects the state of the game e.g.: addfact(q309_triss_lover)
+removefact(factid);Removes an internal fact which affects the state of the game e.g.: removefact(sq202_yen_girlfriend)

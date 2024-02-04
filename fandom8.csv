@@ -1,0 +1,3 @@
+Command;Description
+settime(time);sets time to time
+TM(number);sets how fast time passes ingame

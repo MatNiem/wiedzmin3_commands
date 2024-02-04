@@ -1,0 +1,4 @@
+Command;Description
+spawn(name,#);Spawns a specified amount of NPCs. e.g.: spawn(bear_grizzly,50)
+spawn(name,#,x,true/false);Spawns a specified amount of NPCs at distance x. true=hostile/false=friendly, only works on NPCs
+killall;Kill all enemies engaged in combat.

@@ -1,0 +1,5 @@
+Command;Description
+secretgwint;Immediately play a round of Gwent anywhere
+winGwint(#);Win current Gwent game with specified number of power points.
+addgwintcards;Adds one of every Gwent card to your deck
+additem(card,#);Adds specified number of desired Gwent cards. e.g.: additem(gwint_card_werewolf,10)
