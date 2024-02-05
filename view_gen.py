@@ -18,6 +18,8 @@ def gen_view(page, i, name):
             page.go('/items')
         elif e.control.text == "learnskill(skill)":
             page.go('/skills')
+        elif e.control.text == "additem(card,#)":
+            page.go('/gwent')
         page.set_clipboard(e.control.text)
 
     for wiersz in wiersze:

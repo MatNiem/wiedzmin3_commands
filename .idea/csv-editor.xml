@@ -3,13 +3,6 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
-        <entry key="\alchemy.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
         <entry key="\fandom1.csv">
           <value>
             <Attribute>
@@ -80,6 +73,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\green.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\gwent_cards.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\items.csv">
           <value>
             <Attribute>
@@ -87,21 +94,14 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\magic.csv">
+        <entry key="\red.csv">
           <value>
             <Attribute>
               <option name="separator" value=";" />
             </Attribute>
           </value>
         </entry>
-        <entry key="\perk.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value=";" />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\sword.csv">
+        <entry key="\yellow.csv">
           <value>
             <Attribute>
               <option name="separator" value=";" />

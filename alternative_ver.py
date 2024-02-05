@@ -4,6 +4,7 @@ from flet import RouteChangeEvent, ViewPopEvent, CrossAxisAlignment, MainAxisAli
 import view_gen
 import item_view
 import skills
+import cards
 
 
 def main(page: Page) -> None:
@@ -16,13 +17,13 @@ def main(page: Page) -> None:
         route='/skills',
         controls=[
             AppBar(title=Text('Home'), bgcolor='blue'),
-            ElevatedButton(text="Red", on_click=lambda _: page.go('/skills/sword'), color="red",
+            ElevatedButton(text="Red", on_click=lambda _: page.go('/skills/red'), color="red",
                            width=page.window_width * 0.3, height=page.window_height * 0.15),
-            ElevatedButton(text="Blue", on_click=lambda _: page.go('/skills/magic'), color="blue",
+            ElevatedButton(text="Blue", on_click=lambda _: page.go('/skills/blue'), color="blue",
                            width=page.window_width * 0.3, height=page.window_height * 0.15),
-            ElevatedButton(text="Green", on_click=lambda _: page.go('/skills/alchemy'), color="green",
+            ElevatedButton(text="Green", on_click=lambda _: page.go('/skills/green'), color="green",
                            width=page.window_width * 0.3, height=page.window_height * 0.15),
-            ElevatedButton(text="Yellow", on_click=lambda _: page.go('/skills/perk'), color="yellow",
+            ElevatedButton(text="Yellow", on_click=lambda _: page.go('/skills/yellow'), color="yellow",
                            width=page.window_width * 0.3, height=page.window_height * 0.15),
         ],
         vertical_alignment=MainAxisAlignment.CENTER,
@@ -100,14 +101,16 @@ def main(page: Page) -> None:
                 page.views.append(item_view.gen_item_view(page))
             case '/skills':
                 page.views.append(skills_view)
-            case '/skills/sword':
-                page.views.append(skills.gen_skills_view(page, "sword"))
-            case '/skills/magic':
-                page.views.append(skills.gen_skills_view(page, "magic"))
-            case '/skills/alchemy':
-                page.views.append(skills.gen_skills_view(page, "alchemy"))
-            case '/skills/perk':
-                page.views.append(skills.gen_skills_view(page, "perk"))
+            case '/skills/red':
+                page.views.append(skills.gen_skills_view(page, "red"))
+            case '/skills/blue':
+                page.views.append(skills.gen_skills_view(page, "blue"))
+            case '/skills/green':
+                page.views.append(skills.gen_skills_view(page, "green"))
+            case '/skills/yellow':
+                page.views.append(skills.gen_skills_view(page, "yellow"))
+            case '/gwent':
+                page.views.append(cards.gen_cards_view(page))
             case _:
                 pass
 
@@ -125,4 +128,5 @@ def main(page: Page) -> None:
 
 
 if __name__ == '__main__':
-    ft.app(target=main)
+    ft.app(target=main,
+           assets_dir="skills_icons")
