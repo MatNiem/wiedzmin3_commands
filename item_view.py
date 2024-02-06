@@ -1,6 +1,7 @@
 import flet as ft
 from flet import Page, DataTable, DataColumn, DataRow, DataCell, ElevatedButton, Text, TextField, View, Row, AppBar
 
+
 def gen_item_view(page: Page):
     with open("csv_files/items.csv", "r") as f:
         f.readline()

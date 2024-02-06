@@ -48,7 +48,7 @@ def gen_skills_view(page: Page, name):
         spacing=26
     )
 
-    with open(f"{name}.csv") as csv_file:
+    with open(f"csv_files/{name}.csv") as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=';')
         for row in csv_reader:
             datarow = Row(vertical_alignment=CrossAxisAlignment.CENTER, alignment=MainAxisAlignment.CENTER)

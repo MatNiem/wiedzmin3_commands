@@ -4,7 +4,7 @@ from flet import MainAxisAlignment, CrossAxisAlignment
 
 
 def gen_view(page, i, name):
-    with open(f"fandom{i}.csv", "r") as f:
+    with open(f"csv_files/fandom{i}.csv", "r") as f:
         f.readline()
         dane = f.readlines()
 
