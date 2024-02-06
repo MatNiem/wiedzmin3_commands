@@ -20,7 +20,7 @@ class CardsTab(UserControl):
         grid = GridView(max_extent=self.page.width/5, child_aspect_ratio=0.5)
 
         data = []
-        with open("gwent_cards.csv", "r") as f:
+        with open("csv_files/gwent_cards.csv", "r") as f:
             f.readline()
             file_content = f.readlines()
 

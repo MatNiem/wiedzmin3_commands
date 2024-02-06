@@ -78,7 +78,7 @@ def gen_skills_view(page: Page, name):
 table = []
 
 if __name__ == '__main__':
-    with open("red.csv") as csv_file:
+    with open("csv_files/red.csv") as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=';')
         for row in csv_reader:
             table.append(row)
