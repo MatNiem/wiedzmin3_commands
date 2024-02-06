@@ -115,11 +115,13 @@ def gen_cards_view(page: Page):
         horizontal_alignment=ft.CrossAxisAlignment.CENTER,
     )
 
+# allows tab to resize
     def page_resize(e):
         tabs.width = page.window_width
         tabs.height = page.window_height - 40
         page.update()
 
     page.on_resize = page_resize
+
     view.scroll = False
     return view

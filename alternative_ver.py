@@ -124,7 +124,6 @@ def main(page: Page) -> None:
         top_view: View = page.views[-1]
         page.go(top_view.route)
 
-
     page.on_route_change = route_change
     page.on_view_pop = view_pop
     page.go(page.route)
