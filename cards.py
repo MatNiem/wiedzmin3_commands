@@ -72,12 +72,7 @@ class CardsTab(UserControl):
 
 def gen_cards_view(page: Page):
 
-    view = View(
-        route='/items',
-        controls=[
-            AppBar(title=Text("Cards"), bgcolor='blue'),
-
-            Tabs(
+    tabs = Tabs(
                 selected_index=1,
                 animation_duration=300,
                 tabs=[
@@ -106,12 +101,25 @@ def gen_cards_view(page: Page):
                         content=CardsTab(deck="Skellige", page=page),
                     )
                 ],
-                width=page.width,
-                height=page.height - 40,
+                width=page.window_width,
+                height=page.window_height - 40,
             )
+
+    view = View(
+        route='/items',
+        controls=[
+            AppBar(title=Text("Cards"), bgcolor='blue'),
+            tabs
+
         ],
         horizontal_alignment=ft.CrossAxisAlignment.CENTER,
     )
 
+    def page_resize(e):
+        tabs.width = page.window_width
+        tabs.height = page.window_height - 40
+        page.update()
+
+    page.on_resize = page_resize
     view.scroll = False
     return view

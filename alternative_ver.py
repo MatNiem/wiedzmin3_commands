@@ -31,6 +31,8 @@ def main(page: Page) -> None:
         spacing=26
     )
 
+
+
     def route_change(e: RouteChangeEvent) -> None:
         page.views.clear()
 
@@ -122,6 +124,7 @@ def main(page: Page) -> None:
         top_view: View = page.views[-1]
         page.go(top_view.route)
 
+
     page.on_route_change = route_change
     page.on_view_pop = view_pop
     page.go(page.route)
@@ -129,4 +132,5 @@ def main(page: Page) -> None:
 
 if __name__ == '__main__':
     ft.app(target=main,
-           assets_dir="skills_icons")
+           assets_dir="skills_icons",
+           )
