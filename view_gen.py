@@ -20,6 +20,10 @@ def gen_view(page, i, name):
             page.go('/skills')
         elif e.control.text == "additem(card,#)":
             page.go('/gwent')
+        elif e.control.text == "addabl(buff_ID)":
+            page.go('/buffs_add')
+        elif e.control.text == "rmvabl(buff_ID)":
+            page.go('/buffs_rmv')
         page.set_clipboard(e.control.text)
 
     for wiersz in wiersze:

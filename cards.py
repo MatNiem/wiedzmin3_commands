@@ -2,8 +2,6 @@ import flet as ft
 from flet import (Page, Tabs, Tab, Container, Stack, ElevatedButton,
                   Text, TextField, View, Row, AppBar, Image, UserControl, GridView)
 
-import csv
-
 
 class CardsTab(UserControl):
     def __init__(self, deck: str, page: Page) -> None:
@@ -19,7 +17,6 @@ class CardsTab(UserControl):
     def gen_row(self):
         grid = GridView(max_extent=self.page.width/5, child_aspect_ratio=0.5)
 
-        data = []
         with open("csv_files/gwent_cards.csv", "r") as f:
             f.readline()
             file_content = f.readlines()
@@ -102,7 +99,7 @@ def gen_cards_view(page: Page):
                     )
                 ],
                 width=page.window_width,
-                height=page.window_height - 40,
+                height=page.window_height - 80,
             )
 
     view = View(

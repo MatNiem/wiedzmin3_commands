@@ -5,6 +5,7 @@ import view_gen
 import item_view
 import skills
 import cards
+import buffs
 
 
 def main(page: Page) -> None:
@@ -30,8 +31,6 @@ def main(page: Page) -> None:
         horizontal_alignment=CrossAxisAlignment.CENTER,
         spacing=26
     )
-
-
 
     def route_change(e: RouteChangeEvent) -> None:
         page.views.clear()
@@ -113,6 +112,10 @@ def main(page: Page) -> None:
                 page.views.append(skills.gen_skills_view(page, "yellow"))
             case '/gwent':
                 page.views.append(cards.gen_cards_view(page))
+            case '/buffs_add':
+                page.views.append(buffs.buffs_view_gen(page, "Add buffs"))
+            case '/buffs_rmv':
+                page.views.append(buffs.buffs_view_gen(page, "Remove buffs"))
             case _:
                 pass
 
